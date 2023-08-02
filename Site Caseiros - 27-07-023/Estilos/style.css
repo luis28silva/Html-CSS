@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@font-face {
+    font-family: vidaloka;
+    src: url(../Fontes/Vidaloka-Regular.ttf) format('opentype');
+    font-weight: normal;
+    
+}
+
+:root{
+    --cor0: #fafafa;
+    --cor1: #ffd500;
+    --cor2: #fb920b;
+    --cor3: #b05c09;
+    --cor4: #d90000;
+    --cor5: #0e0601;
+
+    --fonte-padrao: arial, helvetica, verdana, sans-serif;
+    --fonte-destaque: 'DM Serif Display', serif;
+    --fonte-subtitulo: 'vidaloka', helvetica, verdana;
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+body{
+    background-color:var(--cor0)
+}
+
+.container{
+    display: flex;
+    }
+
+header{
+    padding: 20px;
+    text-align: center;
+}
+
+nav{
+    background-color:var(--cor5);
+    padding: 15px;
+    font-family: var(--fonte-destaque);
+}
+
+nav > a{
+    color: var(--cor0);
+    padding: 15px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-weight:normal;
+    }
+
+nav > a:hover{  
+    background-color: var(--cor2);
+    color: var(--cor5);    
+}
+
+main{
+    padding: 20px;
+    min-width: 400px;
+    max-width: 800px;
+    background-color: var(--cor0);
+}
+
+main img{
+    width: 100%;
+    
+}
+
+div > h1{
+    font-weight: normal;
+    font-size: 120px;
+    color: rgb(99, 99, 99);
+    padding: 90px;
+    font-family:var(--fonte-subtitulo)
+}
+
+div.box {
+    width: 200px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+
+}
+
+article > h1{
+    font-weight: normal;
+    font-size: 50px;
+    font-family:var(--fonte-destaque)
+
+}
+
+footer{
+    background-color: #d90000;
+    color: var(--cor0);
+    padding: 100px;
+}
+footer > hr {
+    color: #ffd500;
+} 
+
+
+
+
+
+
